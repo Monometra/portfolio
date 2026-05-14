@@ -1,0 +1,128 @@
+:root {
+  /* Paleta Black, White & Red */
+  --bg-color: #050505;
+  /* Negro casi puro para el fondo */
+  --text-color: #f0f0f0;
+  /* Blanco roto para no cansar la vista */
+  --accent-color: #e60000;
+  /* Rojo intenso para destacar */
+  --secondary-color: #888888;
+  /* Gris para textos secundarios */
+  --border-color: #222222;
+  /* Gris oscuro para separadores */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.7;
+  max-width: 950px;
+  /* Aumentado para que ocupe más espacio */
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-size: 18px;
+  /* Tamaño de letra base más grande */
+}
+
+h1 {
+  font-size: 2.8rem;
+  /* Nombre más grande */
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 1.6rem;
+  /* Secciones más grandes */
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+}
+
+.subtitle {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  padding: 0 5px;
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list li {
+  margin-bottom: 0.8rem;
+}
+
+.skills-list strong {
+  color: #ffffff;
+}
+
+.job,
+.project {
+  margin-bottom: 2rem;
+}
+
+.date {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.8rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  margin-top: 6rem;
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 0.95rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
+}
